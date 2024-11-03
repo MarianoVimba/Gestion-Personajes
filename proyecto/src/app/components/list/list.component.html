@@ -1,0 +1,6 @@
+<p>list works!</p>
+<section>
+    @for (item of lista; track $index) {
+        <app-card (eliminar)="fnEliminar(item.id)" (verDetalles)="fnVerDetalles(item.id)" [personajeList]="item"></app-card>
+    }
+</section>

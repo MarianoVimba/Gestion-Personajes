@@ -1,0 +1,15 @@
+<p>detail works!</p>
+<section>
+    <form action=""  [formGroup]="formulario"   (submit)="actualizar()">
+        <label for="">nombre</label>
+        <input type="text" formControlName="name">
+
+        <label for="">poder</label>
+        <input type="text" formControlName="powers">
+ 
+        <label for="">descripcion</label>
+        <input type="text" formControlName="descripcion">
+
+        <button type="submit">actualizar</button>
+    </form>
+</section>

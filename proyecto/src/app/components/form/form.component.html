@@ -1,0 +1,28 @@
+<p>form works!</p>
+<section>
+    <form action="" [formGroup]="formulario" (ngSubmit)="addPersonaje()">
+       
+        <label for="">nombre</label>
+        <input type="text" formControlName="name">
+        @if (formulario.controls['name'].getError('required')) {
+            <p>required</p>
+        }
+
+        <label for="">alias</label>
+        <input type="text" formControlName="alias">
+        @if (formulario.controls['alias'].getError('required')) {
+            <p>required</p>
+        }
+
+        <label for="">poder</label>
+        <input type="text" formControlName="powers">
+        @if (formulario.controls['powers'].getError('required')) {
+            <p>required</p>
+        }
+
+        <label for="">descripcion</label>
+        <input type="text" formControlName="descripcion">
+
+        <button type="submit">Agregar</button>
+    </form>
+</section>
